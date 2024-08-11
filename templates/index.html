@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate WiFi QR Code</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Generate WiFi QR Code</h1>
+      <form id="qrForm">
+          <label for="ssid">SSID:</label>
+          <input type="text" id="ssid" name="ssid" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <small id="passwordHint"></small> <!-- Etiqueta small para mostrar debajo del label -->
+          
+          <button type="submit">Generate QR Code</button>
+      </form>
+
+      <div id="qrCodeContainer">
+          <img id="qrCodeImage" src="" alt="QR Code will appear here">
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="{{ url_for('static', filename='../static/app.js') }}"></script>
+</body>
+</html>
