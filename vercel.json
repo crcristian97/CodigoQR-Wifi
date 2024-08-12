@@ -1,5 +1,27 @@
 {
-  "rewrites": [
-    { "sources": "/(.*)", "destination": "/"}
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "/templates/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "/static/styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "/static/app.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.py"
+    }
   ]
 }
