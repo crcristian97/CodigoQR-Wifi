@@ -1,0 +1,8 @@
+[build]
+  functions = "functions"
+  publish = "static"
+
+[[redirects]]
+  from = "/generate_qr"
+  to = "/.netlify/functions/generate_qr"
+  status = 200
