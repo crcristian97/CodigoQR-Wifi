@@ -16,7 +16,7 @@ Este proyecto es una aplicación web sencilla que genera un código QR para una 
 Clona este repositorio a tu máquina local:
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
+git clone [https://github.com/yourusername/your-repository.git](https://github.com/crcristian97/CodigoQR-Wifi.git)
 cd your-repository
 
 ### 2. Instalar las dependencias:
